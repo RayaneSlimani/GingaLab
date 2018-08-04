@@ -81,7 +81,7 @@ export class SrtEditor extends Component {
       <div className="form-group container">
       <br/>
       <div className="container-fluid">
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div className="btn-group" role="group" aria-label="Basic example">
       <button id="btn-save" type="submit" className="btn btn-dark" onClick={this.filesave}>Save to SRT</button>
       <button className="btn btn-light"><input className="btn btn-light " type="file" onChange={e => this.handleFile(e.target.files[0])}/></button>
       </div>
@@ -99,9 +99,8 @@ export class SrtEditor extends Component {
 
               <label className="mr-sm-2">End : </label>
                 <input className="form-control"   id="end" type="text" defaultValue={elem.end} name="toSave" data-type="end"/>
-            </div>
-
-            <div class="form-group">
+              </div>
+            <div className="form-group">
               <label htmlFor="content">Content : </label>
                 <textarea className="form-control" id ="content" type="text" defaultValue={elem.content} name="toSave" data-type="content"/>
             </div>
